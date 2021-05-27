@@ -1,0 +1,200 @@
+*{
+margin: 0;
+padding: 0;
+font-family: 'Exo 2', sans-serif;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color:#fdfaf6;
+}
+
+
+
+
+
+
+.banner{
+
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(blood.jpeg);
+    background-size: cover;
+  background-position: center;
+  
+}
+.navbar{
+
+    width: 75%;
+    margin: auto;
+    padding: 15px 0;
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+
+h1{
+    color: aliceblue;
+    font-size: xx-large
+}
+.content__logo{
+    color: #fdfaf6;
+    padding-left: 250px;
+    font-size:x-large;
+    
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+    padding-right: 100;
+}
+.navbar ul li{
+
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fdfaf6;
+  
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width:0;
+    background: #cf0000;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+
+
+
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+ 
+  
+
+}
+.content h1{
+    font-size: 75px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    color: #fdfaf6;
+    font-size: x-large;
+    font-weight: 100;
+    line-height: 25px;
+
+
+}
+button{
+    width: 200px;
+    padding:15px  0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-size: x-large;
+    font-weight: bold;
+    border: 2px solid #cf0000;
+    background: transparent;
+    color: #fdfaf6;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #cf0000;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+
+}    
+button:hover{
+    border: none;
+}
+.section-title{
+    position: relative;
+    font-size: 2rem;
+    color: #cf0000;
+    text-align: center;
+    margin-top:auto;
+    margin-bottom: auto;
+  
+}
+
+.section-title::after{
+    position: absolute;
+    content: "";
+    width: 74px;
+    height: 0.18rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 2.5rem;
+    background-color: #cf0000;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.content__sec{
+    margin: 7rem;
+    text-align: center;
+    font-size: larger;
+    font-weight:bold;
+}
+.donation{
+    
+    padding-left: 400px;
+ 
+  
+}
+.sec_title{
+    position: relative;
+    font-size: 2rem;
+    color: #cf0000;
+    text-align: center;
+    margin-top:auto;
+    margin-bottom: auto;
+  
+}
+
+.sec_title::after{
+    position: absolute;
+    content: "";
+    width: 74px;
+    height: 0.18rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 2.5rem;
+    background-color: #cf0000;
+    border-radius: 10px;
+    font-weight: bold;
+}
